@@ -7,10 +7,10 @@ import java.sql.Statement;
 
 import db.DB;
 
-public class Program {
-    
+public class VerDadosBD {
+
     public static void main(String[] args) {
-        
+
         Connection conn = null;
         Statement st = null;
         ResultSet rs = null;
@@ -30,7 +30,5 @@ public class Program {
             DB.closeStatement(st);
             DB.closeConnection();
         }
-
-
     }
 }
